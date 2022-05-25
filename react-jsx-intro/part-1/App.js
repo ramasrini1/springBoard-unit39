@@ -3,6 +3,6 @@ const App = () => {
 		<div>
 			<FirstComponent />
       <NamedComponent name="Rama" />
-		</div>
+			</div>
 	)
 }
