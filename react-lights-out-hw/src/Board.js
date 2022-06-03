@@ -78,8 +78,8 @@ function Board({ nrows=2, ncols=2, chanceLightStartsOn=0.25 }) {
       //Flip cells around it
       flipCell(y-1, x, boardCopy);
       flipCell(y+1, x, boardCopy);
-      flipCell(x-1, y, boardCopy);
-      flipCell(x+1, y, boardCopy);
+      flipCell(y, x-1, boardCopy);
+      flipCell(y, x+1, boardCopy);
       
       // TODO: return the copy
       return boardCopy;
@@ -98,7 +98,7 @@ function Board({ nrows=2, ncols=2, chanceLightStartsOn=0.25 }) {
   for( let i=0; i<nrows; i++){
     let rows = []
     for( let j=0; j<ncols; j++){
-      let coord = `${y}-${x}`;
+      let coord = `${i}-${j}`;
       rows.push(
         <Cell 
           key={coord}
@@ -106,7 +106,7 @@ function Board({ nrows=2, ncols=2, chanceLightStartsOn=0.25 }) {
           flipCellsAroundMe={() => flipCellsAround(coord)}  
         />)
     }
-    tblBoard.push(<tr key={y}>{rows}</tr>)
+    tblBoard.push(<tr key={i}>{rows}</tr>)
   }
 
   return (

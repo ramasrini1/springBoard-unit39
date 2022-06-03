@@ -1,15 +1,18 @@
 import React from "react";
-import Board from "./Boardf";
 import "./App.css";
+import Board from "./Board";
 
 /** Simple app that just shows the LightsOut game. */
 
 function App() {
   return (
     <div className="App">
-      <Board nrows={2} ncols={2} chanceLightStartsOn={0.25}/>
-      {/* <Board/> */}
+      <div className="Board">
+        <Board />
+      </div>
+     
     </div>
+     
   );
 }
 
