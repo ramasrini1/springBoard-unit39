@@ -1,0 +1,19 @@
+.Todo {
+ margin: 20px;
+ color:blue;
+ margin-right: 20px;
+ display:inline;
+}
+
+.btn1 {
+  margin-left: 20px;
+  color: red;
+}
+
+.btn2 {
+  color: green;
+}
+
+.divider {
+  width: 200px;
+}

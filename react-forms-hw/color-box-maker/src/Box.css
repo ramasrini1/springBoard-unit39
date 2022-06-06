@@ -1,0 +1,13 @@
+.Box {
+  text-align: center;
+  border: 3px solid black;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.removeBtn {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
